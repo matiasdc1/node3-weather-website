@@ -23,7 +23,7 @@ weatherForm.addEventListener('submit', (e) => {
             console.log(data.location)
             console.log(data.forecast)
             messageOne.textContent = data.location
-            messageTwo.textContent = data.forecast.description + '. The temperature is ' + data.forecast.temperature + ' °F.'
+            messageTwo.textContent = data.forecast.description + '. The temperature is ' + data.forecast.temperature + ' °F.' + " The humidity is " + data.forecast.humidity + " %."
         }
         
     })
